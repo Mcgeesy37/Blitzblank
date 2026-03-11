@@ -1,0 +1,469 @@
+<!-- index.html -->
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0b0f1a" />
+    <title>Blitz Blank Gebäudetechnik – Gebäudereinigung Berlin</title>
+    <meta
+      name="description"
+      content="Professionelle Gebäudereinigung in Berlin & Umland: Unterhaltsreinigung, Glas-/Fensterreinigung, Baureinigung, Teppichreinigung, Winterdienst u.v.m."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Zum Inhalt springen</a>
+
+    <!-- Topbar -->
+    <header class="site-header" role="banner">
+      <div class="container header-inner">
+        <a class="brand" href="#" aria-label="Startseite">
+          <img class="brand-logo" src="./assets/logo.svg" alt="Logo" />
+          <div class="brand-text">
+            <span class="brand-name">Blitz Blank</span>
+            <span class="brand-sub">Gebäudetechnik</span>
+          </div>
+        </a>
+
+        <nav class="nav" aria-label="Hauptnavigation">
+          <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+            <span class="nav-toggle-lines" aria-hidden="true"></span>
+            <span class="sr-only">Menü öffnen</span>
+          </button>
+
+          <ul id="nav-menu" class="nav-menu">
+            <li><a href="#leistungen">Leistungen</a></li>
+            <li><a href="#vorher-nachher">Vorher / Nachher</a></li>
+            <li><a href="#ablauf">Ablauf</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-cta">
+          <a class="btn btn-ghost" href="#kontakt">Angebot anfragen</a>
+          <a class="btn btn-primary" id="callNowBtn" href="tel:+49XXXXXXXXXX">Jetzt anrufen</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <main id="main">
+      <section class="hero" aria-label="Hero">
+        <div class="hero-bg" aria-hidden="true">
+          <div class="hero-orb hero-orb-1"></div>
+          <div class="hero-orb hero-orb-2"></div>
+          <div class="hero-grid"></div>
+        </div>
+
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <div class="pill">
+              <span class="dot" aria-hidden="true"></span>
+              Berlin & Umland · 20+ Jahre Erfahrung
+            </div>
+
+            <h1 class="hero-title">
+              Gebäudereinigung, die <span class="accent">sichtbar</span> überzeugt.
+            </h1>
+
+            <p class="hero-lead">
+              Zuverlässig, termintreu, professionell – von Unterhaltsreinigung über Glas-/Fensterreinigung bis
+              Baureinigung, Teppichreinigung und Winterdienst. Für Gewerbe & Privat.
+            </p>
+
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#kontakt">Kostenlose Beratung</a>
+              <a class="btn btn-ghost" href="#vorher-nachher">Vorher/Nachher ansehen</a>
+            </div>
+
+            <div class="trust-row" aria-label="Vorteile">
+              <div class="trust-card">
+                <div class="trust-ico" aria-hidden="true">✓</div>
+                <div>
+                  <div class="trust-title">Faire Preise</div>
+                  <div class="trust-sub">Transparente Angebote</div>
+                </div>
+              </div>
+              <div class="trust-card">
+                <div class="trust-ico" aria-hidden="true">⏱</div>
+                <div>
+                  <div class="trust-title">Termintreu</div>
+                  <div class="trust-sub">Sauber & pünktlich</div>
+                </div>
+              </div>
+              <div class="trust-card">
+                <div class="trust-ico" aria-hidden="true">🌿</div>
+                <div>
+                  <div class="trust-title">Umweltbewusst</div>
+                  <div class="trust-sub">Moderne Mittel</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-panel" aria-label="Schnellanfrage">
+            <div class="panel-head">
+              <div>
+                <div class="panel-title">Schnellanfrage</div>
+                <div class="panel-sub">Antwort i. d. R. am selben Tag</div>
+              </div>
+              <div class="badge">Neu</div>
+            </div>
+
+            <form class="mini-form" id="quickForm">
+              <label class="field">
+                <span>Name</span>
+                <input name="name" type="text" autocomplete="name" placeholder="Max Mustermann" required />
+              </label>
+              <label class="field">
+                <span>Telefon / E-Mail</span>
+                <input
+                  name="contact"
+                  type="text"
+                  autocomplete="tel email"
+                  placeholder="+49 170 0000000 oder mail@..."
+                  required
+                />
+              </label>
+              <label class="field">
+                <span>Leistung</span>
+                <select name="service" required>
+                  <option value="" disabled selected>Bitte wählen…</option>
+                  <option>Unterhaltsreinigung</option>
+                  <option>Glas-/Fensterreinigung</option>
+                  <option>Baureinigung</option>
+                  <option>Teppichreinigung</option>
+                  <option>Grundreinigung</option>
+                  <option>Winterdienst</option>
+                  <option>Sonstiges</option>
+                </select>
+              </label>
+              <label class="field">
+                <span>Nachricht</span>
+                <textarea
+                  name="message"
+                  rows="3"
+                  placeholder="Kurz beschreiben (Objekt, Größe, Terminwunsch)…"
+                  required
+                ></textarea>
+              </label>
+
+              <button class="btn btn-primary btn-block" type="submit">Per WhatsApp senden</button>
+              <p class="form-hint">
+                Kein Spam. Mit Klick wird WhatsApp geöffnet (du kannst vorher prüfen).
+              </p>
+            </form>
+
+            <div class="panel-foot">
+              <div class="tiny">
+                <span class="tiny-k">Einsatzgebiet</span>
+                <span class="tiny-v">Berlin · Potsdam · Umland</span>
+              </div>
+              <div class="tiny">
+                <span class="tiny-k">Service</span>
+                <span class="tiny-v">Gewerbe & Privat</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Leistungen -->
+      <section id="leistungen" class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2>Leistungen</h2>
+            <p>
+              Ein starkes Leistungsspektrum – sauber geplant, effizient umgesetzt und auf Ihr Objekt abgestimmt.
+            </p>
+          </div>
+
+          <div class="cards">
+            <article class="card">
+              <div class="card-ico" aria-hidden="true">🏢</div>
+              <h3>Unterhaltsreinigung</h3>
+              <p>Regelmäßige Reinigung für Büros, Praxen, Treppenhäuser, Anlagen.</p>
+              <ul class="list">
+                <li>Individuelle Intervalle</li>
+                <li>Qualitätskontrollen</li>
+                <li>Feste Teams</li>
+              </ul>
+            </article>
+
+            <article class="card">
+              <div class="card-ico" aria-hidden="true">🪟</div>
+              <h3>Glas & Fenster</h3>
+              <p>Streifenfrei und sicher – Glasflächen, Rahmen, Wintergärten.</p>
+              <ul class="list">
+                <li>Gewerbe & Privat</li>
+                <li>Auch schwer zugänglich</li>
+                <li>Schonende Mittel</li>
+              </ul>
+            </article>
+
+            <article class="card">
+              <div class="card-ico" aria-hidden="true">🧱</div>
+              <h3>Bau- & Feinreinigung</h3>
+              <p>Von Grobschmutz bis Übergabezustand – zuverlässig und terminsicher.</p>
+              <ul class="list">
+                <li>Bauendreinigung</li>
+                <li>Staub- & Zementschleier</li>
+                <li>Abnahmebereit</li>
+              </ul>
+            </article>
+
+            <article class="card">
+              <div class="card-ico" aria-hidden="true">🧼</div>
+              <h3>Grundreinigung</h3>
+              <p>Tiefenreinigung für Böden, Sanitär, Küchen – wenn’s wirklich sauber sein muss.</p>
+              <ul class="list">
+                <li>Hartnäckige Beläge</li>
+                <li>Pflegefilme erneuern</li>
+                <li>Hygienestandards</li>
+              </ul>
+            </article>
+
+            <article class="card">
+              <div class="card-ico" aria-hidden="true">🧽</div>
+              <h3>Teppichreinigung</h3>
+              <p>Frischer Look & bessere Hygiene – punktuell oder flächig.</p>
+              <ul class="list">
+                <li>Fleckenbehandlung</li>
+                <li>Geruchsneutral</li>
+                <li>Schnell trocken</li>
+              </ul>
+            </article>
+
+            <article class="card">
+              <div class="card-ico" aria-hidden="true">❄️</div>
+              <h3>Winterdienst</h3>
+              <p>Schnee- & Eisbeseitigung nach Plan – für Wege, Zufahrten und Flächen.</p>
+              <ul class="list">
+                <li>Bereitschaftsdienst</li>
+                <li>Dokumentation</li>
+                <li>Streumittelkonzept</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Vorher/Nachher -->
+      <section id="vorher-nachher" class="section section-alt">
+        <div class="container">
+          <div class="section-head">
+            <h2>Vorher / Nachher</h2>
+            <p>Bewege den Slider – so sieht “wirklich sauber” aus.</p>
+          </div>
+
+          <div class="ba-grid">
+            <figure class="ba" data-before="./assets/before-1.jpg" data-after="./assets/after-1.jpg">
+              <div class="ba-media" aria-label="Vorher/Nachher Beispiel 1"></div>
+              <input class="ba-range" type="range" min="0" max="100" value="55" aria-label="Vergleichsregler" />
+              <div class="ba-label ba-label-left">Vorher</div>
+              <div class="ba-label ba-label-right">Nachher</div>
+            </figure>
+
+            <figure class="ba" data-before="./assets/before-2.jpg" data-after="./assets/after-2.jpg">
+              <div class="ba-media" aria-label="Vorher/Nachher Beispiel 2"></div>
+              <input class="ba-range" type="range" min="0" max="100" value="50" aria-label="Vergleichsregler" />
+              <div class="ba-label ba-label-left">Vorher</div>
+              <div class="ba-label ba-label-right">Nachher</div>
+            </figure>
+          </div>
+
+          <div class="note">
+            Tipp: Ersetze die Bilder in <code>assets/</code> durch eure echten Vorher/Nachher-Fotos (gleich benennen),
+            dann passt alles automatisch.
+          </div>
+        </div>
+      </section>
+
+      <!-- Ablauf -->
+      <section id="ablauf" class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2>So läuft’s ab</h2>
+            <p>Ein klarer Prozess – damit du schnell ein sauberes Ergebnis bekommst.</p>
+          </div>
+
+          <ol class="steps">
+            <li class="step">
+              <div class="step-num">1</div>
+              <div class="step-body">
+                <h3>Kontakt & Bedarf</h3>
+                <p>Kurze Anfrage, dann klären wir Objekt, Umfang und Termin.</p>
+              </div>
+            </li>
+            <li class="step">
+              <div class="step-num">2</div>
+              <div class="step-body">
+                <h3>Angebot</h3>
+                <p>Transparent, fair, nachvollziehbar – ohne Überraschungen.</p>
+              </div>
+            </li>
+            <li class="step">
+              <div class="step-num">3</div>
+              <div class="step-body">
+                <h3>Durchführung</h3>
+                <p>Geschultes Team, moderne Mittel, saubere Dokumentation.</p>
+              </div>
+            </li>
+            <li class="step">
+              <div class="step-num">4</div>
+              <div class="step-body">
+                <h3>Qualitätscheck</h3>
+                <p>Abnahme & Feinschliff – bis alles passt.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- Kontakt -->
+      <section id="kontakt" class="section section-cta">
+        <div class="container contact-grid">
+          <div class="contact-copy">
+            <h2>Kontakt</h2>
+            <p class="contact-lead">
+              Sag uns kurz, was ansteht. Wir melden uns schnellstmöglich mit Rückfragen oder einem Angebot.
+            </p>
+
+            <div class="contact-cards">
+              <div class="contact-card">
+                <div class="cc-ico" aria-hidden="true">📍</div>
+                <div>
+                  <div class="cc-title">Einsatzgebiet</div>
+                  <div class="cc-sub">Berlin · Potsdam · Umland</div>
+                </div>
+              </div>
+              <div class="contact-card">
+                <div class="cc-ico" aria-hidden="true">🕘</div>
+                <div>
+                  <div class="cc-title">Erreichbarkeit</div>
+                  <div class="cc-sub">Mo–Sa · 08:00–18:00</div>
+                </div>
+              </div>
+              <div class="contact-card">
+                <div class="cc-ico" aria-hidden="true">🧾</div>
+                <div>
+                  <div class="cc-title">Für</div>
+                  <div class="cc-sub">Gewerbe · Privat · Hausverwaltung</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-wrap">
+            <form class="contact-form" id="contactForm">
+              <div class="form-row">
+                <label class="field">
+                  <span>Name</span>
+                  <input name="name" type="text" autocomplete="name" required />
+                </label>
+                <label class="field">
+                  <span>E-Mail</span>
+                  <input name="email" type="email" autocomplete="email" required />
+                </label>
+              </div>
+
+              <div class="form-row">
+                <label class="field">
+                  <span>Telefon</span>
+                  <input name="phone" type="tel" autocomplete="tel" placeholder="+49 ..." />
+                </label>
+                <label class="field">
+                  <span>Leistung</span>
+                  <select name="service" required>
+                    <option value="" disabled selected>Bitte wählen…</option>
+                    <option>Unterhaltsreinigung</option>
+                    <option>Glas-/Fensterreinigung</option>
+                    <option>Baureinigung</option>
+                    <option>Feinreinigung</option>
+                    <option>Grundreinigung</option>
+                    <option>Teppichreinigung</option>
+                    <option>Gartenarbeit</option>
+                    <option>Winterdienst</option>
+                    <option>Sonstiges</option>
+                  </select>
+                </label>
+              </div>
+
+              <label class="field">
+                <span>Nachricht</span>
+                <textarea
+                  name="message"
+                  rows="5"
+                  placeholder="Adresse (optional), Größe/Fläche, Häufigkeit, Terminwunsch…"
+                  required
+                ></textarea>
+              </label>
+
+              <div class="form-actions">
+                <button class="btn btn-primary" type="submit">Nachricht senden</button>
+                <button class="btn btn-ghost" type="button" id="copyMessageBtn">
+                  Nachricht kopieren
+                </button>
+              </div>
+
+              <p class="form-hint">
+                Hinweis: Standardmäßig öffnet die Vorschau dein E-Mail-Programm (mailto). Du kannst später Formspree /
+                Backend anbinden.
+              </p>
+
+              <div class="form-status" id="formStatus" aria-live="polite"></div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+      <div class="container footer-inner">
+        <div class="footer-left">
+          <div class="footer-brand">
+            <img class="footer-logo" src="./assets/logo.svg" alt="Logo" />
+            <div>
+              <div class="footer-name">Blitz Blank Gebäudetechnik</div>
+              <div class="footer-sub">Sicherheit. Hygiene. Glanz.</div>
+            </div>
+          </div>
+          <div class="footer-meta">
+            <a href="#" aria-label="Impressum (Platzhalter)">Impressum</a>
+            <span aria-hidden="true">·</span>
+            <a href="#" aria-label="Datenschutz (Platzhalter)">Datenschutz</a>
+          </div>
+        </div>
+
+        <div class="footer-right">
+          <a class="btn btn-ghost" href="#kontakt">Angebot</a>
+          <a class="btn btn-primary" id="whatsBtnFooter" href="#" rel="noopener">WhatsApp</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Floating WhatsApp -->
+    <a
+      class="wa-fab"
+      id="waFab"
+      href="#"
+      target="_blank"
+      rel="noopener"
+      aria-label="WhatsApp Chat öffnen"
+    >
+      <span class="wa-ico" aria-hidden="true">💬</span>
+      <span class="wa-text">WhatsApp</span>
+    </a>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
